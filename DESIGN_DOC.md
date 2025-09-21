@@ -42,7 +42,7 @@ Open Source for all.
 4. [Feature Map (Functional Requirements)](#features)
 5. [Non-functional Requirements & Constraints](#nonfunctional)
 6. [Core Concepts & Data Model (object-oriented)](#datamodel)
-7. [Course Blueprints, Catalogs & CoursePaths](#courseblueprints)
+7. [Course Blueprints, Catalogs & CoursePaths](#courses)
 8. [Content Types & Management (CMS)](#content)
 9. [Assessment, Grading & Analytics](#grading)
 10. [Messaging, Notifications & Collaboration](#comm)
@@ -56,7 +56,7 @@ Open Source for all.
 18. [Project Structure (persistent goal) — high level](#projstruct)
 19. [UX / UI Design Guidelines (kids-first, accessibility): The Heart of Learning](#ux)
 20. [Roadmap: Phases & Milestones](#roadmap)
-21. \[Appendices: Mermaid diagrams, sample manifests, scoring math]
+21. [Annexures: Mermaid diagrams, sample manifests, scoring math](#annexures)
 
 ---
 
@@ -162,7 +162,7 @@ Start: Grades K — 12 (US/UK/India). Map learning standards:
 
 ---
 
-## 5. Non-functional Requirements & Constraints
+## 5. Non-functional Requirements & Constraints <a name="nfr"></a>
 
 Non-functional requirements (NFRs) define the quality attributes, performance benchmarks, and operational constraints of the Eduverse system. They ensure scalability, reliability, usability, and compliance across multiple stakeholders (students, teachers, parents, admins).
 
@@ -275,7 +275,7 @@ classDiagram
 
 ---
 
-## 7. Course Blueprints, Catalogs & CoursePaths
+## 7. Course Blueprints, Catalogs & CoursePaths <a name="courses"></a>
 
 The Eduverse platform organizes educational content through structured blueprints, centralized catalogs, and adaptive learning paths (CoursePaths). This ensures consistency across schools, subjects, and grade levels, while supporting personalization.
 
@@ -365,7 +365,7 @@ flowchart TD
 
 ---
 
-## 8. Content Types & Management — Detailed Design
+## 8. Content Types & Management — Detailed Design <a name="content"></a>
 
 eduverse treats *content* as first-class, versioned, multilingual, and richly-tagged artifacts that power lessons, quizzes, interactive apps, and games. Design focuses on flexibility, reusability and robust authoring/publishing workflows.
 
@@ -448,7 +448,7 @@ A lightweight editorial workflow supports collaborative authoring:
 
 ---
 
-## 9. Assessment, Grading & Analytics — Detailed Design
+## 9. Assessment, Grading & Analytics — Detailed Design <a name="assessment"></a>
 
 This section expands grading and analytics with concrete data flows, schemas (conceptual), reporting needs, and item-level psychometrics.
 
@@ -499,7 +499,7 @@ This section expands grading and analytics with concrete data flows, schemas (co
 
 ---
 
-## 10. Messaging, Notifications & Collaboration — Expanded
+## 10. Messaging, Notifications & Collaboration — Expanded <a name="messaging"></a>
 
 ### 10.1 Internal Messaging
 
@@ -529,7 +529,7 @@ This section expands grading and analytics with concrete data flows, schemas (co
 
 ---
 
-## 11. Integrations & Standards — Practical Details
+## 11. Integrations & Standards — Practical Details <a name="standards"></a>
 
 ### 11.1 LTI 1.3 / Advantage
 
@@ -563,7 +563,7 @@ This section expands grading and analytics with concrete data flows, schemas (co
 
 ---
 
-## 12. Plugin (as services) & Game/App Architecture (Unity/WebGL + Python Arcade)
+## 12. Plugin (as services) & Game/App Architecture (Unity/WebGL + Python Arcade) <a name="plugins"></a>
 
 eduverse treats plugins (games/apps/tools) as **first-class services** with a well-defined lifecycle: *submit → validate → vet/test → publish → run-time telemetry*. Plugins live in the *marketplace* and are executed in secure sandboxes.
 
@@ -649,7 +649,7 @@ eduverse treats plugins (games/apps/tools) as **first-class services** with a we
 
 eduverse security model emphasizes *principle of least privilege*, auditable policies, and flexible tenancy modes.
 
-### 13.1 Authentication (AuthN)
+### 13.1 Authentication (AuthN) <a name="authn"></a>
 
 Supported methods:
 
@@ -712,7 +712,7 @@ Tenant selection config provides per-tenant settings: default language, payment,
 
 ---
 
-## 14. Observability, Logging & Monitoring (concrete plan)
+## 14. Observability, Logging & Monitoring (concrete plan) <a name="observability"></a>
 
 eduverse must be observable at request, event, and trace level.
 
@@ -748,7 +748,7 @@ eduverse must be observable at request, event, and trace level.
 
 ---
 
-## 15. Backup, Export / Import, & Bulk Operations (operational playbook)
+## 15. Backup, Export / Import, & Bulk Operations (operational playbook) <a name="ops"></a>
 
 ### 15.1 Backup Strategy
 
@@ -775,7 +775,7 @@ eduverse must be observable at request, event, and trace level.
 
 ---
 
-## 16. Scalability & Deployment Blueprint
+## 16. Scalability & Deployment Blueprint <a name="scalability"></a>
 
 ### 16.1 Environments
 
@@ -830,7 +830,7 @@ eduverse must be observable at request, event, and trace level.
 
 ---
 
-## 17. Tech Stack & Tools — Finalized and Opinionated
+## 17. Tech Stack & Tools — Finalized and Opinionated <a name="techstack"></a>
 
 ### 17.1 Summary (stack by concern)
 
@@ -868,7 +868,7 @@ eduverse must be observable at request, event, and trace level.
 
 ---
 
-## 18. Project Structure (persistent goal) — High-level & Conventions
+## 18. Project Structure (persistent goal) — High-level & Conventions <a name="projectstruct"></a>
 
 ### 18.1 Monorepo layout (recommended)
 
@@ -915,7 +915,7 @@ eduverse/ (root)
 
 ---
 
-## 19. UX / UI Design Guidelines (kids-first, accessibility)
+## 19. UX / UI Design Guidelines (kids-first, accessibility) <a name="ux"></a>
 
 ### 19.1 Overarching Principles
 
@@ -987,7 +987,7 @@ graph LR
 
 ---
 
-## 20. Roadmap: Phases, Milestones & Acceptance Criteria
+## 20. Roadmap: Phases, Milestones & Acceptance Criteria <a name="roadmap"></a>
 
 ### 20.1 MVP Scope (0 → 3 months)
 
@@ -1058,7 +1058,7 @@ graph LR
 
 ---
 
-# 21. Appendices & Reference
+# 21. Appendices & Reference <a name="annexures"></a>
 
 > This appendix collects reference artifacts, diagrams, sample manifests, schemas, psychometric formulas and operational checklists intended to be used directly by engineers, content authors, plugin developers and ops teams.
 
